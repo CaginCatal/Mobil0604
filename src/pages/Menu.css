@@ -1,0 +1,49 @@
+/* NOTTTT Menüdeki tüm butonları yerleştirecek container */
+.menu-buttons {
+    display: grid; /* Grid sistemi kullanıyoruz */
+    grid-template-columns: repeat(2, 1fr); /* 2 sütun düzeni */
+    gap: 20px; /* Butonlar arasına mesafe ekliyoruz */
+    margin-top: 20px; /* Üstten mesafe */
+  }
+  
+  /* Menü butonları için temel stil */
+  .menu-button {
+    display: flex; /* Flexbox kullanıyoruz */
+    justify-content: center; /* Buton içeriğini yatayda ortalıyoruz */
+    align-items: center; /* Buton içeriğini dikeyde ortalıyoruz */
+    padding: 15px; /* Buton içindeki boşluk */
+    border-radius: 12px; /* Buton köşe yuvarlaması */
+    font-weight: bold; /* Metin kalınlaştırması */
+    transition: all 0.3s ease; /* Yumuşak geçiş animasyonu */
+    text-align: center; /* Metni ortalıyoruz */
+    background-color: #222; /* Buton arka plan rengi */
+    color: white; /* Buton metin rengi */
+  }
+  
+  /* Buton hover (üzerine gelindiğinde) durumundaki stil */
+  .menu-button:hover {
+    transform: scale(1.05); /* Buton üzerine gelindiğinde biraz büyür */
+    background-color: #0077b6; /* Hover arka plan rengi */
+  }
+  
+  /* Buton metni ile ikon arasına mesafe ekliyoruz */
+  .menu-button span {
+    margin-left: 10px; /* İkon ile metin arasına mesafe */
+  }
+  
+  /* Butonlara tıklandığında kenarlık çıkar */
+  .menu-button:focus {
+    outline: none;
+  }
+  
+  /* Buton içindeki ikonları stilize ediyoruz */
+  .menu-button IonIcon {
+    font-size: 24px; /* İkon boyutunu ayarlıyoruz */
+  }
+  
+  /* Daha büyük ekranlar için responsive düzenleme */
+  @media (min-width: 768px) {
+    .menu-buttons {
+      grid-template-columns: repeat(3, 1fr); /* 3 sütun düzeni */
+    }
+  }

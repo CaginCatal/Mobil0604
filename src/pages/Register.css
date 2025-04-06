@@ -1,0 +1,10 @@
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .register-form .ion-margin-top {
+    margin-top: 16px;
+  }
+  

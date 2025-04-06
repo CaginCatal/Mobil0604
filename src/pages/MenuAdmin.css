@@ -1,0 +1,70 @@
+.admin-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: gold;
+    text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.7); /* Başlık için altın rengi gölge efekti */
+    padding: 20px 0;
+  }
+  
+  .admin-content {
+    text-align: center;
+    background: linear-gradient(to bottom, #222, #111);
+    color: white;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out; /* Sayfa yavaşça gelir */
+  }
+  
+  .admin-card {
+    background: #222;
+    color: gold;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Kartlara gölge ekleyelim */
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animasyonu */
+  }
+  
+  .admin-card:hover {
+    transform: scale(1.05); /* Kartlar hover'da büyüsün */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.8); /* Hover'da daha belirgin gölge */
+  }
+  
+  .special-button {
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease; /* Butonlar için yumuşak geçiş */
+    padding: 12px 0;
+  }
+  
+  .special-button:hover {
+    transform: scale(1.05); /* Hover efektinde buton büyüsün */
+    background-color: #ff6f61; /* Hover'da renk değişimi */
+    color: white;
+  }
+  
+  .special-button:active {
+    transform: scale(0.98); /* Tıklandığında buton küçülür */
+    background-color: #ff4c3b; /* Tıklanırken daha koyu renk */
+  }
+  
+  .admin-content p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #ddd;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Metinlere hafif gölge efekti */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
